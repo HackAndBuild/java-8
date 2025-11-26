@@ -40,6 +40,11 @@ public class Easy {
         maxAndMinValues();
 
         //Merge two unsorted arrays into a single sorted array using Java 8 streams
+        sortedArray();
+
+    }
+
+    private static void sortedArray() {
         int[] randomNumbers = {12, 32, 2, 4, 777, 5, 32, 890, 422, 44, 99, 43};
         int[] randomNumber2 = {4, 3, 2, 5, 6, 78, 98, 53, 90};
 
@@ -48,7 +53,6 @@ public class Easy {
                 .distinct()
                 .toArray();
         System.out.println(Arrays.toString(sortedArray));
-
     }
 
     private static void maxAndMinValues() {
